@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>My To Do List</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>My To Do List</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Sort Todo List</h2>
+            </div>
+            <div class="col-md-6">
+                <button onclick="sortListDir()" class="btn btn-warning btn-lg btn-block">Sort a-z / z-a</button>
+            </div>
+            <div class="col-md-6">
+                <select id="abc" class="browser-default custom-select">
+                    <option value="aa" selected disabled>Sort Todo List</option>
+                    <option value="a">Sort A to Z</option>
+                    <option value="b">Sort Z to A</option>
+                </select>
+            </div>
+        </div>
+        <div class="well">
+            <h2>Add To Do List</h2>
+            <form class="form-inline">
+                <div class="form-group mx-sm-12 mb-2">
+                    <input id="resolution_name" type="text" class="form-control"></div>
+                <div class="form-group mx-sm-3 mb-2">
+                    <button id="add_resolution" class="btn btn-success btn-lg btn-block">+ Add </button></div>
+            </form>
+
+            <ul id="resolution_list" class="list-group">
+                <li class="list-group-item"><span>Create</span><input type="text" /> <button
+                        class="source-button btn btn-danger btn-xs" style="float: right;">delete</button>
+                </li>
+                <li class="list-group-item"><span>View</span><input type="text" /> <button
+                        class="source-button btn btn-danger btn-xs" style="float: right;">delete</button>
+                </li>
+                <li class="list-group-item"><span>Update</span><input type="text" /> <button
+                        class="source-button btn btn-danger btn-xs" style="float: right;">delete</button>
+                </li>
+                <li class="list-group-item"><span>Delete</span><input type="text" /> <button
+                        class="source-button btn btn-danger btn-xs" style="float: right;">delete</button>
+                </li>
+            </ul>
+
+            </br></br>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+            <script src="script.js"></script>
+
+        </div>
+</body>
+
+</html>

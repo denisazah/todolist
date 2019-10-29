@@ -1,0 +1,13 @@
+body {
+    background-color: DarkSlateBlue;
+    color: White;
+  }
+  h1 {
+    font-family: Verdana, sans-serif;
+    font-weight: bold;
+  }
+  ul {
+    font-family: Georgia, serif;
+    margin: 0;
+    padding: 0;
+  }
